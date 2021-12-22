@@ -1,0 +1,782 @@
+
+     Program PWSCF v.6.6 starts on 23Dec2021 at  4:22:41 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     128 processor cores
+     Number of MPI processes:               128
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =     128
+     Fft bands division:     nmany     =       1
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     Message from routine iosys:
+     restart disabled: needed files not found
+     file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+     file H.pbe-kjpaw_psl.1.0.0.UPF: wavefunction(s)  1S renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         299     119     29                44165    11165    1391
+     Max         300     120     30                44172    11174    1402
+     Sum       38393   15329   3833              5653693  1429635  178925
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      28.3459  a.u.
+     unit-cell volume          =   22775.6289 (a.u.)^3
+     number of atoms/cell      =           24
+     number of atomic types    =            2
+     number of electrons       =        60.00
+     number of Kohn-Sham states=           30
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     600.0000  Ry
+     convergence threshold     =      1.0E-08
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= SLA PW PBX PBC
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=  28.345892  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     /home/k0151/k015124/src/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 5f16ad9a65e90284d1d834d4ab3b0f7d
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for H  read from file:
+     /home/k0151/k015124/src/pseudo/H.pbe-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d81a744832360e4a8af0b0b5b123bc2a
+     Pseudo is Projector augmented-wave, Zval =  1.0
+     Generated using "atomic" code by A. Dal Corso v.6.3MaX
+     Shape of augmentation charge: PSQ
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01100     C ( 1.00)
+        H              1.00     1.00800     H ( 1.00)
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   0.5926667   0.5000000   0.5000000  )
+         2           C   tau(   2) = (   0.5466667   0.4200000   0.5000000  )
+         3           C   tau(   3) = (   0.4533333   0.4200000   0.5000000  )
+         4           C   tau(   4) = (   0.4073333   0.5000000   0.5000000  )
+         5           C   tau(   5) = (   0.4533333   0.5800000   0.5000000  )
+         6           C   tau(   6) = (   0.5466667   0.5800000   0.5000000  )
+         7           H   tau(   7) = (   0.6593333   0.5000000   0.5000000  )
+         8           H   tau(   8) = (   0.5800000   0.3620000   0.5000000  )
+         9           H   tau(   9) = (   0.4200000   0.3620000   0.5000000  )
+        10           H   tau(  10) = (   0.3406667   0.5000000   0.5000000  )
+        11           H   tau(  11) = (   0.4200000   0.6380000   0.5000000  )
+        12           H   tau(  12) = (   0.5800000   0.6380000   0.5000000  )
+        13           C   tau(  13) = (   0.7800000   0.5466667   0.7400000  )
+        14           C   tau(  14) = (   0.7800000   0.4533333   0.7400000  )
+        15           C   tau(  15) = (   0.7000000   0.4073333   0.7400000  )
+        16           C   tau(  16) = (   0.6200000   0.4533333   0.7400000  )
+        17           C   tau(  17) = (   0.6200000   0.5466667   0.7400000  )
+        18           C   tau(  18) = (   0.7000000   0.5926667   0.7400000  )
+        19           H   tau(  19) = (   0.8380000   0.5800000   0.7400000  )
+        20           H   tau(  20) = (   0.8380000   0.4200000   0.7400000  )
+        21           H   tau(  21) = (   0.7000000   0.3406667   0.7400000  )
+        22           H   tau(  22) = (   0.5620000   0.4206667   0.7400000  )
+        23           H   tau(  23) = (   0.5620000   0.5800000   0.7400000  )
+        24           H   tau(  24) = (   0.7000000   0.6593333   0.7400000  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           C   tau(   1) = (  0.5926667  0.5000000  0.5000000  )
+         2           C   tau(   2) = (  0.5466667  0.4200000  0.5000000  )
+         3           C   tau(   3) = (  0.4533333  0.4200000  0.5000000  )
+         4           C   tau(   4) = (  0.4073333  0.5000000  0.5000000  )
+         5           C   tau(   5) = (  0.4533333  0.5800000  0.5000000  )
+         6           C   tau(   6) = (  0.5466667  0.5800000  0.5000000  )
+         7           H   tau(   7) = (  0.6593333  0.5000000  0.5000000  )
+         8           H   tau(   8) = (  0.5800000  0.3620000  0.5000000  )
+         9           H   tau(   9) = (  0.4200000  0.3620000  0.5000000  )
+        10           H   tau(  10) = (  0.3406667  0.5000000  0.5000000  )
+        11           H   tau(  11) = (  0.4200000  0.6380000  0.5000000  )
+        12           H   tau(  12) = (  0.5800000  0.6380000  0.5000000  )
+        13           C   tau(  13) = (  0.7800000  0.5466667  0.7400000  )
+        14           C   tau(  14) = (  0.7800000  0.4533333  0.7400000  )
+        15           C   tau(  15) = (  0.7000000  0.4073333  0.7400000  )
+        16           C   tau(  16) = (  0.6200000  0.4533333  0.7400000  )
+        17           C   tau(  17) = (  0.6200000  0.5466667  0.7400000  )
+        18           C   tau(  18) = (  0.7000000  0.5926667  0.7400000  )
+        19           H   tau(  19) = (  0.8380000  0.5800000  0.7400000  )
+        20           H   tau(  20) = (  0.8380000  0.4200000  0.7400000  )
+        21           H   tau(  21) = (  0.7000000  0.3406667  0.7400000  )
+        22           H   tau(  22) = (  0.5620000  0.4206667  0.7400000  )
+        23           H   tau(  23) = (  0.5620000  0.5800000  0.7400000  )
+        24           H   tau(  24) = (  0.7000000  0.6593333  0.7400000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:  5653693 G-vectors     FFT dimensions: ( 225, 225, 225)
+
+     Smooth grid:  1429635 G-vectors     FFT dimensions: ( 144, 144, 144)
+
+     Dynamical RAM for                 wfc:       0.64 MB
+
+     Dynamical RAM for     wfc (w. buffer):       0.64 MB
+
+     Dynamical RAM for           str. fact:       1.35 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       2.56 MB
+
+     Dynamical RAM for                qrad:       1.12 MB
+
+     Dynamical RAM for          rho,v,vnew:       4.34 MB
+
+     Dynamical RAM for               rhoin:       1.45 MB
+
+     Dynamical RAM for            rho*nmix:      10.78 MB
+
+     Dynamical RAM for           G-vectors:       2.61 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.16 MB
+
+     Dynamical RAM for          <psi|beta>:       0.05 MB
+
+     Dynamical RAM for                 psi:       1.28 MB
+
+     Dynamical RAM for                hpsi:       1.28 MB
+
+     Dynamical RAM for                spsi:       1.28 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       1.30 MB
+
+     Dynamical RAM for           addusdens:      37.07 MB
+
+     Estimated static dynamical RAM per process >      30.73 MB
+
+     Estimated max dynamical RAM per process >      86.27 MB
+
+     Estimated total dynamical RAM >      10.78 GB
+     Cannot read rho : file not found
+
+     Initial potential from superposition of free atoms
+
+     starting charge   59.99939, renormalised to   60.00000
+
+     negative rho (up, down):  1.149E-04 0.000E+00
+     Message from routine qexsd_readschema :
+     xml data file ./tmp/ben2.save/data-file-schema.xml not found
+     Cannot read wfcs: file not found
+     Starting wfcs are   60 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+       PAW data deallocated on   62 nodes for type:  1
+       PAW data deallocated on   66 nodes for type:  2
+
+     total cpu time spent up to now is        9.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-05,  avg # of iterations =  7.0
+
+     negative rho (up, down):  2.015E-04 0.000E+00
+
+     total cpu time spent up to now is       10.4 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -26.8568 -26.8420 -24.1702 -24.1692 -24.0071 -23.9966 -20.5473 -20.5318
+   -20.4497 -20.4398 -18.3881 -18.3771 -16.8555 -16.8511 -16.6308 -16.6178
+   -15.8283 -15.8243 -15.6945 -15.6820 -13.9046 -13.8878 -13.7856 -13.7846
+   -13.5041 -13.3581 -10.8471 -10.8170 -10.6509 -10.6239
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):   -10.6239
+
+!    total energy              =    -234.41061433 Ry
+
+     total all-electron energy =      -927.579729 Ry
+     estimated scf accuracy    <       3.40008022 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -769.08653748 Ry
+     hartree contribution      =     391.28150558 Ry
+     xc contribution           =     -65.27492315 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =      11.80753434 Ry
+     one-center paw contrib.   =     -74.28820788 Ry
+      -> PAW hartree energy AE =       9.23760382 Ry
+      -> PAW hartree energy PS =      -9.22663769 Ry
+      -> PAW xc energy AE      =     -10.64388652 Ry
+      -> PAW xc energy PS      =       4.44196350 Ry
+      -> total E_H with PAW    =     391.29247171 Ry
+      -> total E_XC with PAW   =     -71.47684617 Ry
+
+     iteration #  2     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.67E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.385E-04 0.000E+00
+
+     total cpu time spent up to now is       11.5 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -18.9419 -18.9128 -16.7088 -16.6641 -16.6560 -16.6065 -13.5982 -13.5660
+   -13.5320 -13.5103 -11.7045 -11.7005 -10.8141 -10.8097  -8.7016  -8.6557
+    -8.6522  -8.6340  -8.6085  -8.5828  -7.1591  -6.9131  -6.6530  -6.6493
+    -6.5519  -6.5474  -4.4775  -4.4734  -4.2915  -4.1568
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -4.1568
+
+!    total energy              =    -235.14406439 Ry
+
+     total all-electron energy =      -928.313179 Ry
+     estimated scf accuracy    <       0.49712445 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -745.20262847 Ry
+     hartree contribution      =     383.48428205 Ry
+     xc contribution           =     -64.53476941 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =      -5.91727876 Ry
+     one-center paw contrib.   =     -74.12368408 Ry
+      -> PAW hartree energy AE =       9.31882378 Ry
+      -> PAW hartree energy PS =      -9.30929389 Ry
+      -> PAW xc energy AE      =     -10.64524951 Ry
+      -> PAW xc energy PS      =       4.45878277 Ry
+      -> total E_H with PAW    =     383.49381194 Ry
+      -> total E_XC with PAW   =     -70.72123615 Ry
+
+     iteration #  3     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.29E-04,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.220E-04 0.000E+00
+
+     total cpu time spent up to now is       12.2 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -21.2523 -21.2277 -18.5488 -18.5452 -18.4427 -18.4404 -15.0043 -14.9791
+   -14.9327 -14.9256 -13.1957 -13.1888 -11.5545 -11.5507 -10.7443 -10.7415
+   -10.4000 -10.3966 -10.3079 -10.3038  -9.0410  -8.8173  -8.2781  -8.2775
+    -8.1751  -8.1735  -6.2742  -6.2353  -6.0671  -5.9984
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.9984
+
+!    total energy              =    -235.23446651 Ry
+
+     total all-electron energy =      -928.403581 Ry
+     estimated scf accuracy    <       0.01345558 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -753.05389384 Ry
+     hartree contribution      =     384.75519267 Ry
+     xc contribution           =     -64.72330089 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =       0.69342232 Ry
+     one-center paw contrib.   =     -74.05590104 Ry
+      -> PAW hartree energy AE =       9.86324602 Ry
+      -> PAW hartree energy PS =      -9.85410081 Ry
+      -> PAW xc energy AE      =     -10.76809758 Ry
+      -> PAW xc energy PS      =       4.58749222 Ry
+      -> total E_H with PAW    =     384.76433788 Ry
+      -> total E_XC with PAW   =     -70.90390625 Ry
+
+     iteration #  4     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.24E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.251E-04 0.000E+00
+
+     total cpu time spent up to now is       13.0 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.9092 -20.8845 -18.2724 -18.2623 -18.1609 -18.1485 -14.7569 -14.7315
+   -14.6871 -14.6781 -12.8974 -12.8907 -11.3242 -11.3199 -10.4792 -10.4783
+   -10.0935 -10.0778  -9.9931  -9.9795  -8.7882  -8.5654  -7.9999  -7.9976
+    -7.8961  -7.8930  -6.0400  -6.0127  -5.8376  -5.7570
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.7570
+
+!    total energy              =    -235.23610934 Ry
+
+     total all-electron energy =      -928.405224 Ry
+     estimated scf accuracy    <       0.00050652 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.82626024 Ry
+     hartree contribution      =     385.03137544 Ry
+     xc contribution           =     -64.74953912 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =       0.20437730 Ry
+     one-center paw contrib.   =     -74.04607698 Ry
+      -> PAW hartree energy AE =       9.98596622 Ry
+      -> PAW hartree energy PS =      -9.97686259 Ry
+      -> PAW xc energy AE      =     -10.79595077 Ry
+      -> PAW xc energy PS      =       4.61616606 Ry
+      -> total E_H with PAW    =     385.04047907 Ry
+      -> total E_XC with PAW   =     -70.92932383 Ry
+
+     iteration #  5     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.44E-07,  avg # of iterations =  3.0
+
+     negative rho (up, down):  2.260E-04 0.000E+00
+
+     total cpu time spent up to now is       13.7 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8275 -20.8025 -18.1998 -18.1927 -18.0960 -18.0848 -14.7022 -14.6765
+   -14.6318 -14.6234 -12.8451 -12.8388 -11.2926 -11.2888 -10.4044 -10.4026
+   -10.0316 -10.0181  -9.9379  -9.9251  -8.7215  -8.4969  -7.9439  -7.9408
+    -7.8395  -7.8369  -5.9765  -5.9471  -5.7746  -5.6947
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6947
+
+!    total energy              =    -235.23628649 Ry
+
+     total all-electron energy =      -928.405401 Ry
+     estimated scf accuracy    <       0.00002335 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.59874212 Ry
+     hartree contribution      =     385.00444755 Ry
+     xc contribution           =     -64.74499334 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =      -0.00365481 Ry
+     one-center paw contrib.   =     -74.04335804 Ry
+      -> PAW hartree energy AE =      10.01867608 Ry
+      -> PAW hartree energy PS =     -10.00958545 Ry
+      -> PAW xc energy AE      =     -10.80338034 Ry
+      -> PAW xc energy PS      =       4.62381678 Ry
+      -> total E_H with PAW    =     385.01353817 Ry
+      -> total E_XC with PAW   =     -70.92455691 Ry
+
+     iteration #  6     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.89E-08,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.257E-04 0.000E+00
+
+     total cpu time spent up to now is       14.5 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8385 -20.8134 -18.2060 -18.1997 -18.1025 -18.0910 -14.7058 -14.6800
+   -14.6352 -14.6268 -12.8521 -12.8458 -11.2940 -11.2906 -10.4098 -10.4074
+   -10.0402 -10.0273  -9.9469  -9.9336  -8.7280  -8.5030  -7.9501  -7.9463
+    -7.8451  -7.8429  -5.9817  -5.9523  -5.7799  -5.7003
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.7003
+
+!    total energy              =    -235.23629366 Ry
+
+     total all-electron energy =      -928.405408 Ry
+     estimated scf accuracy    <       0.00000188 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.61034054 Ry
+     hartree contribution      =     385.00715460 Ry
+     xc contribution           =     -64.74388011 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =       0.00393070 Ry
+     one-center paw contrib.   =     -74.04317257 Ry
+      -> PAW hartree energy AE =      10.02299014 Ry
+      -> PAW hartree energy PS =     -10.01389949 Ry
+      -> PAW xc energy AE      =     -10.80437447 Ry
+      -> PAW xc energy PS      =       4.62481898 Ry
+      -> total E_H with PAW    =     385.01624525 Ry
+      -> total E_XC with PAW   =     -70.92343561 Ry
+
+     iteration #  7     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.14E-09,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.257E-04 0.000E+00
+
+     total cpu time spent up to now is       15.4 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8363 -20.8113 -18.2054 -18.1985 -18.1011 -18.0903 -14.7057 -14.6800
+   -14.6354 -14.6266 -12.8517 -12.8454 -11.2953 -11.2916 -10.4086 -10.4069
+   -10.0398 -10.0264  -9.9458  -9.9331  -8.7263  -8.5017  -7.9496  -7.9464
+    -7.8451  -7.8424  -5.9806  -5.9512  -5.7786  -5.6989
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6989
+
+!    total energy              =    -235.23629428 Ry
+
+     total all-electron energy =      -928.405409 Ry
+     estimated scf accuracy    <       0.00000101 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.59965168 Ry
+     hartree contribution      =     385.00550090 Ry
+     xc contribution           =     -64.74375474 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =      -0.00531867 Ry
+     one-center paw contrib.   =     -74.04308437 Ry
+      -> PAW hartree energy AE =      10.02334013 Ry
+      -> PAW hartree energy PS =     -10.01425042 Ry
+      -> PAW xc energy AE      =     -10.80444583 Ry
+      -> PAW xc energy PS      =       4.62490076 Ry
+      -> total E_H with PAW    =     385.01459061 Ry
+      -> total E_XC with PAW   =     -70.92329981 Ry
+
+     iteration #  8     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.69E-09,  avg # of iterations =  4.0
+
+     negative rho (up, down):  2.256E-04 0.000E+00
+
+     total cpu time spent up to now is       16.1 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8367 -20.8117 -18.2058 -18.1991 -18.1016 -18.0907 -14.7061 -14.6804
+   -14.6357 -14.6271 -12.8520 -12.8456 -11.2956 -11.2920 -10.4092 -10.4073
+   -10.0400 -10.0268  -9.9461  -9.9333  -8.7268  -8.5019  -7.9501  -7.9467
+    -7.8454  -7.8428  -5.9810  -5.9516  -5.7789  -5.6995
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6995
+
+!    total energy              =    -235.23629442 Ry
+
+     total all-electron energy =      -928.405409 Ry
+     estimated scf accuracy    <       0.00000006 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.60160647 Ry
+     hartree contribution      =     385.00412375 Ry
+     xc contribution           =     -64.74376288 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =      -0.00204869 Ry
+     one-center paw contrib.   =     -74.04301440 Ry
+      -> PAW hartree energy AE =      10.02378405 Ry
+      -> PAW hartree energy PS =     -10.01469467 Ry
+      -> PAW xc energy AE      =     -10.80454450 Ry
+      -> PAW xc energy PS      =       4.62500357 Ry
+      -> total E_H with PAW    =     385.01321313 Ry
+      -> total E_XC with PAW   =     -70.92330381 Ry
+
+     iteration #  9     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.94E-11,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.256E-04 0.000E+00
+
+     total cpu time spent up to now is       16.9 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8372 -20.8121 -18.2061 -18.1995 -18.1020 -18.0909 -14.7065 -14.6807
+   -14.6359 -14.6274 -12.8521 -12.8458 -11.2956 -11.2920 -10.4098 -10.4077
+   -10.0402 -10.0271  -9.9464  -9.9334  -8.7272  -8.5023  -7.9504  -7.9469
+    -7.8456  -7.8431  -5.9814  -5.9520  -5.7794  -5.6999
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6999
+
+!    total energy              =    -235.23629446 Ry
+
+     total all-electron energy =      -928.405409 Ry
+     estimated scf accuracy    <       0.00000004 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.60433064 Ry
+     hartree contribution      =     385.00408934 Ry
+     xc contribution           =     -64.74375084 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =       0.00070133 Ry
+     one-center paw contrib.   =     -74.04301791 Ry
+      -> PAW hartree energy AE =      10.02391949 Ry
+      -> PAW hartree energy PS =     -10.01482999 Ry
+      -> PAW xc energy AE      =     -10.80457685 Ry
+      -> PAW xc energy PS      =       4.62503489 Ry
+      -> total E_H with PAW    =     385.01317884 Ry
+      -> total E_XC with PAW   =     -70.92329279 Ry
+
+     iteration # 10     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.92E-11,  avg # of iterations =  3.0
+
+     negative rho (up, down):  2.256E-04 0.000E+00
+
+     total cpu time spent up to now is       17.6 secs
+
+          k = 0.0000 0.0000 0.0000     band energies (ev):
+
+   -20.8372 -20.8121 -18.2061 -18.1995 -18.1020 -18.0910 -14.7065 -14.6807
+   -14.6359 -14.6274 -12.8522 -12.8458 -11.2956 -11.2920 -10.4097 -10.4077
+   -10.0402 -10.0271  -9.9464  -9.9335  -8.7272  -8.5024  -7.9504  -7.9470
+    -7.8456  -7.8431  -5.9815  -5.9520  -5.7794  -5.6999
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6999
+
+!    total energy              =    -235.23629445 Ry
+
+     total all-electron energy =      -928.405409 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.60443339 Ry
+     hartree contribution      =     385.00434665 Ry
+     xc contribution           =     -64.74374881 Ry
+     ewald contribution        =     271.15001427 Ry
+     scf correction            =       0.00055615 Ry
+     one-center paw contrib.   =     -74.04302932 Ry
+      -> PAW hartree energy AE =      10.02399971 Ry
+      -> PAW hartree energy PS =     -10.01491007 Ry
+      -> PAW xc energy AE      =     -10.80459680 Ry
+      -> PAW xc energy PS      =       4.62505344 Ry
+      -> total E_H with PAW    =     385.01343629 Ry
+      -> total E_XC with PAW   =     -70.92329217 Ry
+
+     iteration # 11     ecut=    60.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.11E-11,  avg # of iterations =  5.0
+
+     negative rho (up, down):  2.256E-04 0.000E+00
+
+     total cpu time spent up to now is       18.3 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (178925 PWs)   bands (ev):
+
+   -20.8371 -20.8121 -18.2061 -18.1994 -18.1019 -18.0909 -14.7064 -14.6806
+   -14.6359 -14.6273 -12.8521 -12.8458 -11.2956 -11.2920 -10.4096 -10.4077
+   -10.0401 -10.0270  -9.9463  -9.9335  -8.7271  -8.5023  -7.9503  -7.9469
+    -7.8456  -7.8430  -5.9814  -5.9519  -5.7793  -5.6998
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+     1.0000   1.0000   1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -5.6998
+
+!    total energy              =    -235.23629446 Ry
+
+     total all-electron energy =      -928.405409 Ry
+     estimated scf accuracy    <          9.0E-10 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -752.60390060 Ry
+     hartree contribution      =     385.00438097 Ry
+     xc contribution           =     -64.74375961 Ry
+     ewald contribution        =     271.15001427 Ry
+     one-center paw contrib.   =     -74.04302948 Ry
+      -> PAW hartree energy AE =      10.02392012 Ry
+      -> PAW hartree energy PS =     -10.01483054 Ry
+      -> PAW xc energy AE      =     -10.80457796 Ry
+      -> PAW xc energy PS      =       4.62503502 Ry
+      -> total E_H with PAW    =     385.01347055 Ry
+      -> total E_XC with PAW   =     -70.92330255 Ry
+
+     convergence has been achieved in  11 iterations
+
+     Writing output data file ./tmp/ben2.save/
+ 
+     init_run     :      5.04s CPU      6.77s WALL (       1 calls)
+     electrons    :      7.94s CPU      9.86s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.16s CPU      1.00s WALL (       1 calls)
+     wfcinit:atom :      0.00s CPU      0.00s WALL (       1 calls)
+     wfcinit:wfcr :      0.16s CPU      0.99s WALL (       1 calls)
+     potinit      :      0.20s CPU      0.39s WALL (       1 calls)
+     hinit0       :      0.21s CPU      0.65s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      3.23s CPU      3.62s WALL (      11 calls)
+     sum_band     :      1.63s CPU      1.97s WALL (      11 calls)
+     v_of_rho     :      1.54s CPU      1.66s WALL (      12 calls)
+     v_h          :      0.13s CPU      0.14s WALL (      12 calls)
+     v_xc         :      1.41s CPU      1.52s WALL (      12 calls)
+     newd         :      0.80s CPU      1.30s WALL (      12 calls)
+     PAW_pot      :      0.23s CPU      0.36s WALL (      12 calls)
+     mix_rho      :      0.28s CPU      0.46s WALL (      11 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.04s CPU      0.04s WALL (      23 calls)
+     cegterg      :      3.19s CPU      3.55s WALL (      11 calls)
+
+     Called by sum_band:
+     sum_band:wei :      0.00s CPU      0.00s WALL (      11 calls)
+     sum_band:loo :      0.45s CPU      0.46s WALL (      11 calls)
+     sum_band:buf :      0.00s CPU      0.00s WALL (      11 calls)
+     sum_band:ini :      0.02s CPU      0.02s WALL (      11 calls)
+     sum_band:cal :      0.04s CPU      0.05s WALL (      11 calls)
+     sum_band:bec :      0.00s CPU      0.00s WALL (      11 calls)
+     addusdens    :      1.01s CPU      1.31s WALL (      11 calls)
+     addusd:skk   :      0.11s CPU      0.15s WALL (      22 calls)
+     addusd:dgemm :      0.58s CPU      0.83s WALL (      22 calls)
+     addusd:qvan2 :      0.23s CPU      0.24s WALL (      22 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.07s CPU      0.95s WALL (      54 calls)
+     cegterg:over :      0.11s CPU      0.12s WALL (      43 calls)
+     cegterg:upda :      0.05s CPU      0.05s WALL (      43 calls)
+     cegterg:last :      0.12s CPU      0.12s WALL (      30 calls)
+     h_psi        :      2.70s CPU      2.94s WALL (      55 calls)
+     s_psi        :      0.20s CPU      0.20s WALL (      55 calls)
+     g_psi        :      0.00s CPU      0.00s WALL (      43 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.20s CPU      0.33s WALL (      55 calls)
+     vloc_psi     :      2.28s CPU      2.34s WALL (      55 calls)
+     add_vuspsi   :      0.21s CPU      0.26s WALL (      55 calls)
+
+     General routines
+     calbec       :      0.24s CPU      0.38s WALL (      66 calls)
+     fft          :      1.25s CPU      1.75s WALL (     154 calls)
+     ffts         :      0.07s CPU      0.09s WALL (      23 calls)
+     fftw         :      2.46s CPU      2.53s WALL (    2566 calls)
+     interpolate  :      0.15s CPU      0.17s WALL (      12 calls)
+ 
+     Parallel routines
+     fft_scatt_xy :      0.28s CPU      0.29s WALL (    2743 calls)
+     fft_scatt_yz :      2.46s CPU      2.58s WALL (    2743 calls)
+
+     PAW routines
+     PAW_pot      :      0.23s CPU      0.36s WALL (      12 calls)
+ 
+     PWSCF        :     14.50s CPU     20.44s WALL
+
+ 
+   This run was terminated on:   4:23: 1  23Dec2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
